@@ -29,5 +29,9 @@ class ViewController: UIViewController {
         
         view.backgroundColor = .white
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        gradientView.updateGradient()
+    }
 }
 

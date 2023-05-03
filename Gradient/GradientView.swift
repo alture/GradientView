@@ -74,4 +74,8 @@ final class GradientView: UIView {
         layer.shadowOpacity = 0.5
         layer.shadowOffset = .init(width: 0, height: 10)
     }
+    
+    func updateGradient() {
+        setGradientColor(startColor, endColor)
+    }
 }
